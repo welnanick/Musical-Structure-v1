@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="now_playing_name">Now Playing</string>
+    <string name="your_library_name">Your Library</string>
+    <string name="store_name">Store</string>
+    <string name="main_landing_screen_label">Main Landing Screen:</string>
+    <string name="main_landing_screen_description">This screen is the landing page for the app. From here you can get to three different screens. You can jump directly to what\'s currently playing, browse your music library, or browse the in-app music store</string>
+</resources>
