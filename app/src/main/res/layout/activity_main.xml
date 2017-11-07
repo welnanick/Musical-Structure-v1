@@ -12,19 +12,22 @@
 
         <TextView
             style="@style/Navigation"
-            android:text="@string/now_playing_name" />
+            android:text="@string/now_playing_name"
+            android:id="@+id/now_playing_text"/>
 
         <View style="@style/DividerTheme" />
 
         <TextView
             style="@style/Navigation"
-            android:text="@string/your_library_name" />
+            android:text="@string/your_library_name"
+            android:id="@+id/your_library_text"/>
 
         <View style="@style/DividerTheme" />
 
         <TextView
             style="@style/Navigation"
-            android:text="@string/store_name" />
+            android:text="@string/store_name"
+            android:id="@+id/store_text" />
     </LinearLayout>
 
     <TextView

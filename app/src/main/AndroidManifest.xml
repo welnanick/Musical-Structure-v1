@@ -9,14 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:label="Music Player">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_activity_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LibraryActivity"
+            android:label="@string/your_library_name" />
+        <activity
+            android:name=".StoreActivity"
+            android:label="@string/store_name" />
+        <activity
+            android:name=".PurchaseActivity"
+            android:label="@string/shopping_cart_name" />
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/now_playing_name" />
     </application>
 
 </manifest>

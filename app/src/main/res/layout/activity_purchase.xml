@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nickwelna.musicalstructure.PurchaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_top_bottom"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/DescriptionLabelStyle"
+        android:text="@string/order_summary_label"/>
+
+    <TextView
+        style="@style/DescriptionStyle"
+        android:text="@string/order_summary"/>
+
+    <TextView
+        style="@style/DescriptionStyle"
+        android:text="@string/total_price"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_start_end"
+        android:layout_marginEnd="@dimen/padding_start_end"
+        android:text="@string/pay_button_text"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/description_title"
+        style="@style/DescriptionLabelStyle"
+        android:layout_above="@+id/screen_description"
+        android:text="@string/purchase_screen_label" />
+
+    <TextView
+        android:id="@id/screen_description"
+        style="@style/DescriptionStyle"
+        android:text="@string/purchase_screen_description" />
+
+</RelativeLayout>

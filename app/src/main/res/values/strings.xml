@@ -1,8 +1,34 @@
 <resources>
     <string name="app_name">Musical Structure</string>
+    <string name="main_activity_name">Music Player</string>
     <string name="now_playing_name">Now Playing</string>
     <string name="your_library_name">Your Library</string>
+    <string name="shopping_cart_name">Shopping Cart</string>
     <string name="store_name">Store</string>
     <string name="main_landing_screen_label">Main Landing Screen:</string>
     <string name="main_landing_screen_description">This screen is the landing page for the app. From here you can get to three different screens. You can jump directly to what\'s currently playing, browse your music library, or browse the in-app music store</string>
+    <string name="song_1">Song 1</string>
+    <string name="song_2">Song 2</string>
+    <string name="song_3">Song 3</string>
+    <string name="song_4">Song 4</string>
+    <string name="song_5">Song 5</string>
+    <string name="song_6">Song 6</string>
+    <string name="song_7">Song 7</string>
+    <string name="song_8">Song 8</string>
+    <string name="song_9">Song 9</string>
+    <string name="song_10">Song 10</string>
+    <string name="your_library_screen_label">Your Library Screen:</string>
+    <string name="your_library_screen_description">This screen shows all the songs on the user\'s device in a simple layout. This screen is intentionally kept simple. Tapping on a song would start it in the actual app, but here is does nothing</string>
+    <string name="store_screen_label">Store Screen:</string>
+    <string name="store_screen_description">This screen shows songs the user can buy. It would show the user the results of their search. In the real app they would add a song to their cart by tapping it. Then they would tap \"Pay\" and be brought to the payment screen.</string>
+    <string name="song">Song</string>
+    <string name="purchase_button_text">Purchase</string>
+    <string name="purchase_screen_label">Purchase Screen:</string>
+    <string name="purchase_screen_description">This screen shows the order summary and allows the user to pay for thier order. It would use Google\'s In-App Billing API to make the purchase. \n \n To use this API all you have to do is add the library to your project, update your manifest, and create a ServiceConnection bound to IInAppBillingService. Then you send your billing requests to IInAppBillingService, which you then handle externally through google play.</string>
+    <string name="order_summary_label">Order Summary:</string>
+    <string name="order_summary">...</string>
+    <string name="total_price">Total: $10</string>
+    <string name="pay_button_text">Pay</string>
+    <string name="now_playing_screen_label">Now Playing Screen:</string>
+    <string name="now_playing_screen_description">This screen shows the song currently playing, allows the user to play/pause, and skip to the previous or next song.</string>
 </resources>
