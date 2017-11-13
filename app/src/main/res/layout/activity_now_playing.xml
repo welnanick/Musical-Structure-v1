@@ -9,15 +9,15 @@
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/controls">
+        android:layout_above="@+id/controls"
+        android:layout_marginBottom="@dimen/padding_top_bottom"
+        android:layout_marginTop="@dimen/padding_top_bottom">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_heightPercent="70%"
-            app:layout_widthPercent="70%"
-            android:layout_centerInParent="true"
-            android:src="@drawable/fake_album_cover" />
+            style="@style/AlbumCoverStyle"
+            android:contentDescription="@string/album_cover_description"
+            android:src="@drawable/fake_album_cover"
+            app:layout_widthPercent="70%" />
 
     </android.support.percent.PercentRelativeLayout>
 
@@ -26,26 +26,65 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/description_title"
-        android:gravity="center">
+        android:layout_marginEnd="@dimen/padding_start_end"
+        android:layout_marginStart="@dimen/padding_start_end">
 
-        <ImageView
-            android:id="@+id/previous"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_skip_previous_black_24dp" />
+        <RelativeLayout
+            android:id="@+id/fake_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/play"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_toEndOf="@id/previous"
-            android:src="@drawable/ic_play_arrow_black_24dp" />
+            <ImageView
+                android:id="@+id/library"
+                style="@style/ControlsStyle"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/previous_song_description"
+                android:src="@drawable/ic_list_black_24dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_toEndOf="@id/play"
-            android:src="@drawable/ic_skip_next_black_24dp" />
+            <TextView
+                style="@style/SongDescriptionStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/fake_song_information" />
+
+            <ImageView
+                android:id="@+id/store"
+                style="@style/ControlsStyle"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/previous_song_description"
+                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fake_info"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/previous"
+                style="@style/ControlsStyle"
+                android:contentDescription="@string/previous_song_description"
+                android:src="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageView
+                android:id="@+id/play"
+                style="@style/ControlsStyle"
+                android:layout_toEndOf="@id/previous"
+                android:contentDescription="@string/play_button_description"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageView
+                android:id="@+id/next"
+                style="@style/ControlsStyle"
+                android:layout_toEndOf="@id/play"
+                android:contentDescription="@string/next_song_description"
+                android:src="@drawable/ic_skip_next_black_24dp" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <TextView

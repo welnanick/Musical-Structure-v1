@@ -42,6 +42,14 @@
 
     </style>
 
+    <style name="SongDescriptionStyle" parent="TextAppearance.AppCompat.Body2">
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
     <style name="DescriptionLabelStyle" parent="TextAppearance.AppCompat.Body1">
 
         <item name="android:layout_height">wrap_content</item>
@@ -59,6 +67,21 @@
         <item name="android:layout_marginStart">@dimen/padding_start_end</item>
         <item name="android:layout_marginEnd">@dimen/padding_start_end</item>
         <item name="android:background">@color/black</item>
+
+    </style>
+
+    <style name="AlbumCoverStyle">
+
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="ControlsStyle">
+
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">64dp</item>
 
     </style>
 

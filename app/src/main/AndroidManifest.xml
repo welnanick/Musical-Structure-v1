@@ -29,7 +29,8 @@
             android:label="@string/shopping_cart_name" />
         <activity
             android:name=".NowPlayingActivity"
-            android:label="@string/now_playing_name" />
+            android:label="@string/now_playing_name"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

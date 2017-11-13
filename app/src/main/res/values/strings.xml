@@ -18,17 +18,22 @@
     <string name="song_9">Song 9</string>
     <string name="song_10">Song 10</string>
     <string name="your_library_screen_label">Your Library Screen:</string>
-    <string name="your_library_screen_description">This screen shows all the songs on the user\'s device in a simple layout. This screen is intentionally kept simple. Tapping on a song would start it in the actual app, but here is does nothing</string>
+    <string name="your_library_screen_description">This screen shows all the songs on the user\'s device in a simple layout. This screen is intentionally kept simple. Tapping on a song brings you to the now playing screen</string>
     <string name="store_screen_label">Store Screen:</string>
     <string name="store_screen_description">This screen shows songs the user can buy. It would show the user the results of their search. In the real app they would add a song to their cart by tapping it. Then they would tap \"Pay\" and be brought to the payment screen.</string>
     <string name="song">Song</string>
     <string name="purchase_button_text">Purchase</string>
     <string name="purchase_screen_label">Purchase Screen:</string>
-    <string name="purchase_screen_description">This screen shows the order summary and allows the user to pay for thier order. It would use Google\'s In-App Billing API to make the purchase. \n \n To use this API all you have to do is add the library to your project, update your manifest, and create a ServiceConnection bound to IInAppBillingService. Then you send your billing requests to IInAppBillingService, which you then handle externally through google play.</string>
+    <string name="purchase_screen_description">This screen shows the order summary and allows the user to pay for their order. It would use Google\'s In-App Billing API to make the purchase. Once you have paid you are brought to your library \n \n To use this API all you have to do is add the library to your project, update your manifest, and create a ServiceConnection bound to IInAppBillingService. Then you send your billing requests to IInAppBillingService, which you then handle externally through google play.</string>
     <string name="order_summary_label">Order Summary:</string>
     <string name="order_summary">...</string>
     <string name="total_price">Total: $10</string>
     <string name="pay_button_text">Pay</string>
     <string name="now_playing_screen_label">Now Playing Screen:</string>
-    <string name="now_playing_screen_description">This screen shows the song currently playing, allows the user to play/pause, and skip to the previous or next song.</string>
+    <string name="now_playing_screen_description">This screen shows the song currently playing, allows the user to play/pause, and skip to the previous or next song. Uses android.support.percent.PercentRelativeLayout to make the album cover dynamically fit the screen size of any device</string>
+    <string name="album_cover_description">Album Cover</string>
+    <string name="previous_song_description">Previous Song</string>
+    <string name="play_button_description">Play Button</string>
+    <string name="next_song_description">Next Song</string>
+    <string name="fake_song_information">Song Title - Song Artist\nSong Album</string>
 </resources>

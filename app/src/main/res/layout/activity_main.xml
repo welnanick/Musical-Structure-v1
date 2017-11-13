@@ -11,33 +11,33 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/now_playing_text"
             style="@style/Navigation"
-            android:text="@string/now_playing_name"
-            android:id="@+id/now_playing_text"/>
+            android:text="@string/now_playing_name" />
 
         <View style="@style/DividerTheme" />
 
         <TextView
+            android:id="@+id/your_library_text"
             style="@style/Navigation"
-            android:text="@string/your_library_name"
-            android:id="@+id/your_library_text"/>
+            android:text="@string/your_library_name" />
 
         <View style="@style/DividerTheme" />
 
         <TextView
+            android:id="@+id/store_text"
             style="@style/Navigation"
-            android:text="@string/store_name"
-            android:id="@+id/store_text" />
+            android:text="@string/store_name" />
     </LinearLayout>
 
     <TextView
+        style="@style/DescriptionLabelStyle"
         android:layout_above="@+id/screen_description"
-        android:text="@string/main_landing_screen_label"
-        style="@style/DescriptionLabelStyle" />
+        android:text="@string/main_landing_screen_label" />
 
     <TextView
         android:id="@id/screen_description"
-        android:text="@string/main_landing_screen_description"
-        style="@style/DescriptionStyle"/>
+        style="@style/DescriptionStyle"
+        android:text="@string/main_landing_screen_description" />
 
 </RelativeLayout>
